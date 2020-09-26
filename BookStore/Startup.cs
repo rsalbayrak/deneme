@@ -31,10 +31,7 @@ namespace BookStore
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapGet("/", async context =>
-                {
-                    await context.Response.WriteAsync("Deneme 2");
-                });
+                endpoints.MapDefaultControllerRoute();
             });
         }
     }
